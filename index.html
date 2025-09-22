@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legola$ — Portfolio</title>
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg">
+    <!-- subtle colorful blobs for depth -->
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav glass">
+      <div class="brand">Yaxshilab o'qing !</div>
+      <ul class="nav-links">
+        <li><a href="#about">Haqimda</a></li>
+        <li><a href="#skills">Ko‘nikmalar</a></li>
+        <li><a href="#projects">Loyihalar</a></li>
+        <li><a href="#contact">Aloqa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero glass-hero">
+      <div class="hero-left">
+        <img src="../my_photo.jpg" alt="ISFANDIYOR profil rasmi" class="avatar" />
+      </div>
+      <div class="hero-right">
+        <h1>Salom, men <span class="accent">Isfandiyor</span></h1>
+        <p class="lead">Web dasturchi — frontend & backend. Men toza, ishlatishga qulay va zamonaviy interfeyslar yarataman.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="../cv.pdf" download>📄 CV yuklab olish</a>
+          <a class="btn ghost" href="#projects">Loyihalarim</a>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="panel glass">
+      <h2>Haqimda</h2>
+      <p>Men yosh va kreativ web dasturchiman. Frontend (HTML, CSS, JS) va backend (Python, Flask/Django) bilan ishlayman. Loyihalarda toza kod, yaxshi UX va tezlik ustuvorligim.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="panel glass">
+      <h2>Ko‘nikmalar</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS </div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">Django / fastapi</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="panel glass">
+      <h2>Loyihalar</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="card-content">
+            <h3>Portfolio Vebsayt</h3>
+            <p>Glassy dizayn bilan toza va responsive portfolio.</p>
+            <a class="card-link" href="#">Ko‘proq</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-content">
+            <h3>ERP Dashboard</h3>
+            <p>Flask va PostgreSQL asosida boshqaruv paneli.</p>
+            <a class="card-link" href="#">Ko‘proq</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-content">
+            <h3>Mobil App</h3>
+            <p>Python Kivy yordamida yaratilgan oddiy mobil ilova.</p>
+            <a class="card-link" href="#">Ko‘proq</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="panel glass">
+      <h2>Aloqa</h2>
+      <p>Telefon: <strong>+998 90 211 29 98</strong> • Email: <strong>isfandioryolchiyev@gmail.com</strong></p>
+      <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Form demo: server yo‘q.');">
+        <input type="text" name="name" placeholder="Ismingiz" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Xabar..." required></textarea>
+        <button class="btn primary" type="submit">Yuborish</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <small>&copy; 2025 ISFANDIYOR — Barcha huquqlar himoyalangan.</small>
+  </footer>
+
+  <!-- Optional small script for nav mobile toggle (no libraries) -->
+  <script>
+    // mobile nav toggle (if you add a burger icon later)
+  </script>
+</body>
+</html>
